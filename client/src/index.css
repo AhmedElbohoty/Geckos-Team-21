@@ -124,6 +124,83 @@ a {
 }
 
 /* ==============
+      Dashboard
+   ============*/
+#dashboard {
+  padding: 2rem 7%;
+  overflow-x: hidden;
+}
+
+#dashboard .goals-container {
+  display: grid;
+  grid-auto-rows: 1fr;
+  margin: 2rem;
+}
+
+#dashboard .goal {
+  padding: 1rem 0;
+  display: grid;
+  grid-template-columns: 50px 2fr repeat(2, 1fr) 0.5fr 50px;
+  grid-column-gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#dashboard .goal div:first-child,
+#dashboard .goal div:last-child {
+  text-align: center;
+}
+
+#dashboard .goal:nth-child(2n) {
+  background: #ddd;
+}
+
+#dashboard a {
+  color: black;
+}
+
+#dashboard .add-goal {
+  display: inline-block;
+  margin: 0 50%;
+  padding: 12px 80px;
+  color: white;
+  background: rgb(78, 206, 78);
+  border: none;
+  border-radius: 7px;
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+  white-space: nowrap;
+  box-shadow: 0 0 4px rgb(171, 182, 171);
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+#dashboard .add-goal:hover {
+  background: rgb(66, 196, 66);
+}
+
+#dashboard h1 {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+#dashboard .delete {
+  color: red;
+  font-weight: bold;
+}
+
+#dashboard .active-goals {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+#dashboard .active-goals span:first-child {
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+/* ==============
       Footer
    ============*/
 #footer {

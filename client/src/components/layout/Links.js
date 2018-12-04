@@ -11,11 +11,11 @@ class Links extends Component {
     if (this.state.isAuth) {
       return (
         <div>
-          <Link className="link" to="signup">
+          <Link className="link" to="/signup">
             Sign up
           </Link>
 
-          <Link className="link" to="login">
+          <Link className="link" to="/login">
             Login
           </Link>
         </div>
@@ -23,7 +23,7 @@ class Links extends Component {
     } else {
       return (
         <div>
-          <Link className="link" to="dashboard">
+          <Link className="link" to="/dashboard">
             Dashboard
           </Link>
 

@@ -6,6 +6,7 @@ import Homepage from "./components/Homepage";
 import Footer from "./components/layout/Footer";
 import NotFound from "./components/layout/NotFound";
 import Profile from "./components/profile/Profile";
+import Dashboard from "./components/dashboard/Dashboard";
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
             <Switch>
               <Route exact path="/" component={Homepage} />
               <Route exact path="/profile/:id" component={Profile} />
+              <Route exact path="/dashboard" component={Dashboard} />
               <Route component={NotFound} />
             </Switch>
           </div>
